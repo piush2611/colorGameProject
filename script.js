@@ -90,6 +90,7 @@ button1.addEventListener("click", function(){
 	colors = generateRandomColor(numColors);
 	// picking a new random color from array
 	pickedColor = pickColor();
+	colorDisplay.textContent = pickedColor;
 	// changing color of squares
 	for(var i=0; i < color.length; i++){
 		color[i].style.background = colors[i];
